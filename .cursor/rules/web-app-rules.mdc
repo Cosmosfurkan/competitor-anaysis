@@ -1,0 +1,118 @@
+---
+description: create NexJS web app rules
+globs: *.tsx
+---
+# Rival Research Platform - Development Rules
+
+## Core Features Implementation
+
+### 1. User Input Interface
+
+- Implement platform selection buttons (Instagram, TikTok, YouTube)
+- Create search input field for niche/topic
+- Add "Find Competitors" button
+- Use Shadcn UI / daisyUI for consistent UI components
+
+### 2. Competitor Analysis System
+
+- Integrate APIs for each platform:
+  - YouTube Data API
+  - TikTok Scraper API
+  - Instagram Graph API
+- Implement data processing for:
+  - Top 10 creators per niche
+  - Top 10 videos per creator
+  - Video analysis metrics (elements, storytelling, entertainment, engagement)
+
+### 3. Paywall Implementation
+
+- Set up Stripe integration for payments
+- Implement logic for:
+  - Free tier (20 video results)
+  - Premium access ($3-$5 one-time payment)
+- Handle secure payment processing
+
+### 4. Page Structure
+
+- Create responsive layouts for:
+  - Top section (title/description)
+  - Main interface
+  - Bottom section (user guide)
+- Implement mobile-responsive design
+
+## Technical Stack Requirements
+
+### Frontend
+
+- Use Next.js as primary framework
+- Implement Tailwind CSS for styling
+- Use TypeScript for type safety
+- Utilize component library (Shadcn UI / daisyUI)
+
+### Backend
+
+- Utilize Next.js API Routes
+- Implement API integrations using axios
+- Set up Supabase database connection
+- Configure authentication system
+
+## Development Guidelines
+
+### Code Style
+
+- Use TypeScript for all components
+- Follow clean code principles
+- Implement modular component structure
+
+### Git Commits
+
+Use prefixes:
+
+- `feat:` for new features
+- `fix:` for bug fixes
+- `style:` for styling changes
+- `docs:` for documentation
+- `chore:` for maintenance
+
+### API Integration
+
+- Implement secure API key management
+- Handle rate limiting for social media APIs
+- Implement error handling for API responses
+
+### install process
+
+- use yarn 
+
+### Testing
+
+- Write unit tests for core functionality
+- Implement E2E tests for user flows
+- Test payment integration thoroughly
+
+### Security
+
+- Implement proper CORS policies
+- Secure API endpoints
+- Sanitize user inputs
+- Use HTTPS protocols
+
+### Performance
+
+- Optimize API calls
+- Implement lazy loading
+- Use code splitting
+- Optimize bundle size
+
+## Package Management
+
+- Use pnpm as package manager
+- Maintain clean dependency tree
+- Regular dependency updates
+
+## Documentation
+
+- Maintain clear API documentation
+- Document component usage
+- Keep setup instructions updated
+- Include contribution guidelines
